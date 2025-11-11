@@ -1,4 +1,4 @@
-Api
+Api listing
 => http://localhost:5000/api/auth/login => Post
 => http://localhost:5000/api/auth/register => Post
 => http://localhost:5000/api/users/2 => Get
