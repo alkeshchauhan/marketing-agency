@@ -1,0 +1,75 @@
+/* App-specific styles */
+#root {
+  min-height: 100vh;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark-mode .card,
+.dark-mode .modal-content {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+
+.dark-mode .table {
+  color: #ffffff;
+}
+
+.dark-mode .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .form-control {
+  background-color: #333333;
+  border-color: #404040;
+  color: #ffffff;
+}
+
+.dark-mode .form-control:focus {
+  background-color: #404040;
+  border-color: #666666;
+  color: #ffffff;
+}
+
+.dark-mode .modal-header {
+  border-bottom-color: #404040;
+}
+
+.dark-mode .modal-footer {
+  border-top-color: #404040;
+}
+
+.dark-mode .alert {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+
+/* Admin layout specific */
+.admin-layout {
+  min-height: 100vh;
+  display: flex;
+}
+
+.admin-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.admin-content {
+  flex: 1;
+  overflow: auto;
+  padding: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-content {
+    padding: 1rem;
+  }
+}

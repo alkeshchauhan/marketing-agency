@@ -1,0 +1,112 @@
+.users-container {
+  padding: 1.5rem 0;
+}
+
+.users-header {
+  margin-bottom: 1rem;
+}
+
+.users-title {
+  margin-bottom: 0;
+}
+
+.avatar-cell {
+  width: 90px;
+}
+
+.avatar-container {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.375rem;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar-placeholder {
+  width: 60px;
+  height: 60px;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal styles */
+.preview-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  margin-top: 0.5rem;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+.form-footer .btn + .btn {
+  margin-left: 0.5rem;
+}
+
+/* Loading state */
+.loading-container {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Status dropdown styles */
+.status-active {
+  background-color: #e8f5e9 !important;
+  border-color: #4caf50 !important;
+  color: #2e7d32 !important;
+  font-weight: 500;
+}
+
+.status-inactive {
+  background-color: #ffebee !important;
+  border-color: #ef5350 !important;
+  color: #c62828 !important;
+  font-weight: 500;
+}
+
+/* Hover styles */
+.status-active:hover {
+  background-color: #c8e6c9 !important;
+}
+
+.status-inactive:hover {
+  background-color: #ffcdd2 !important;
+}
+
+/* Status loading spinner */
+.status-loading {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+td {
+  position: relative;
+}
+
+/* Action buttons */
+.action-buttons .btn + .btn {
+  margin-left: 0.5rem;
+}
+
+.action-buttons .btn {
+  min-width: 80px;
+}

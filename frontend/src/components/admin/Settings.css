@@ -1,0 +1,42 @@
+.settings-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.settings-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #6c757d;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #495057;
+}
+
+.section-arrow {
+  color: #adb5bd;
+}
+
+.search-box {
+  width: 300px;
+}
+
+.search-box input {
+  border-radius: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 1px solid #dee2e6;
+}

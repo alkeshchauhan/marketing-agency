@@ -1,0 +1,97 @@
+.admin-sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #2c3e50;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 60px;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.admin-sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  gap: 15px;
+}
+
+.nav-link:hover {
+  background-color: #34495e;
+  padding-left: 25px;
+}
+
+.nav-link.active {
+  background-color: #3498db;
+}
+
+.nav-link i {
+  width: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.nav-link span {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.collapsed .nav-link {
+  padding: 15px 25px;
+}
+
+.collapsed .nav-link span {
+  opacity: 0;
+  width: 0;
+  display: none;
+}
+
+/* Dark Mode Styles */
+.dark-mode .admin-sidebar {
+  background-color: #1a1a1a;
+}
+
+.dark-mode .nav-link:hover {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .nav-link.active {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .admin-sidebar.show {
+    transform: translateX(0);
+  }
+  
+  .collapsed {
+    transform: translateX(-100%);
+  }
+}
